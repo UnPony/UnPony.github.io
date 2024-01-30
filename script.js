@@ -16,7 +16,6 @@ let songIndex = 0;
 loadSong(songs[songIndex])
 // 更新歌曲细节
 function loadSong(song) {
-    title.innerHTML = song
     audio.src = `music/${song}.mp3`;      // 路径为 music/打上花火.mp3
 }
 
@@ -39,28 +38,6 @@ function pauseSong() {
     audio.pause();
 }
 
-// 上一首
-function prevSong() {
-    songIndex--
-    if (songIndex < 0) {
-        songIndex = songs.length - 1
-    }
-    // 加载歌曲信息并播放
-    loadSong(songs[songIndex])
-    playSong()
-}
-// 下一首
-function nextSong() {
-    songIndex++;
-
-    if (songIndex > songs.length - 1) {
-        songIndex = 0;
-    }
-
-    loadSong(songs[songIndex]);
-
-    playSong();
-}
 
 // 事件监听
 // 1.播放歌曲
