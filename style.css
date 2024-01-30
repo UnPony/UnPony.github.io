@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:url(img/1.png) no-repeat 0px 0px;
+    height: 100vh;
+    display: flex;
+    /* 沿垂直主轴上下垂直排列 */
+    flex-direction: column;
+    /* 主轴水平居中 */
+    align-items: center;
+    /* 主轴垂直居中 */
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.music-container {
+    background-color: rgba(45, 45, 43, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 30%;
+
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+.music-container.play .img-container img {
+    /* 播放 */
+    animation-play-state: running;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    /* 取消默认样式 */
+    border: 0;
+    background-color: rgba(45, 45, 43, 0);
+    /* ----- */
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.action-btn:focus {
+    /* 取消默认样式 */
+    outline: 0;
+}
+
+.action-btn.action-btn-big {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.music-info h4 {
+    /* 取消默认边距 */
+    margin: 0;
+}
+
