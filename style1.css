@@ -28,7 +28,6 @@ body {
 }
 
 .music-container.play .img-container img {
-    /* 播放 */
     animation-play-state: running;
 }
 
@@ -41,7 +40,6 @@ body {
 }
 
 .action-btn {
-    /* 取消默认样式 */
     border: 0;
     background-color: rgba(45, 45, 43, 0);
     /* ----- */
@@ -53,7 +51,6 @@ body {
 }
 
 .action-btn:focus {
-    /* 取消默认样式 */
     outline: 0;
 }
 
@@ -63,7 +60,6 @@ body {
 }
 
 .music-info h4 {
-    /* 取消默认边距 */
     margin: 0;
 }
 
